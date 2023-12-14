@@ -1,0 +1,642 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Quicksand:wght@400;700&display=swap');
+
+
+*, *::before, *::after{
+    box-sizing: border-box; 
+}
+
+html {
+    scroll-behavior: smooth
+}
+
+body {
+    font-family: "Open Sans", system-ui, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    margin: 0;
+    padding: 0;
+}
+
+/* Start Header */
+header.navbar-container {
+    width: 100%;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    box-shadow: 0px 2px 5px #7a0a09;
+    background-color: white;
+}
+
+header.navbar-container .nav-list ul {
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem 1rem;
+}
+   
+header.navbar-container .nav-list li {
+    list-style-type: none;
+}
+   
+header.navbar-container .nav-list li a {
+    text-decoration: none;
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: black;
+    padding: .5rem 1.5rem;
+    border-radius: 999px;
+    transition: all .2s ease-in-out;
+}
+   
+header.navbar-container .nav-list li:hover a {
+    background-color: #7a0a09;
+    color: white;
+}
+
+/* Start Main */
+main {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    margin-inline: auto;
+    align-items: center;
+}
+
+main .content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 4rem;
+}
+
+.title{
+    font-family: 'Caveat', cursive;
+    margin-top: 0;
+}
+
+.sub-title {
+    font-size: 0.8rem;
+    color: grey;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.card {
+    box-shadow: 0px 2px 15px #7a0a09;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.card h2 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+#btn_back_up {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    border-radius: 100%;
+    color: white;
+    background-color: #7a0a09;
+    z-index: 99;
+    height: 44px;
+    width: 44px;
+    cursor: pointer;
+}
+
+/* Top Content */
+main .content .content-description {
+    flex: 1 1;
+}
+   
+main .content .content-description .title {
+    font-size: 3.5rem;
+    margin-block: 1rem;
+}
+   
+main .content .content-description p {
+    line-height: 1.7rem;
+    font-size: 1.2rem;
+}
+   
+main .content .content-description a {
+    padding: .8rem 2.5rem;
+    margin-block-start: 1rem;
+    font-weight: 700;
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    display: flex;
+    border: 3px solid transparent;
+    border-radius: 999px;
+    background-color: #7a0a09;
+    transition: all .15s ease-in;
+    text-decoration: none;
+    justify-content: center;
+}
+   
+main .content .content-description a:hover {
+    border: 3px solid #7a0a09;
+    color: #7a0a09;
+    background-color: transparent;
+}
+   
+main .content .content-image {
+    flex: 1;
+    display: flex;
+}
+   
+main .content .content-image img {
+    margin: auto;
+    min-width: 250px;
+    width: 300px;
+    border-radius: 50%;
+}
+
+/* Content About Us */
+blockquote::before,
+blockquote::after {
+  content: '"';
+  font-size: 20px;
+  font-style: italic;
+  font-weight: bold;
+}
+
+main .content .content-aboutus {
+    align-self: auto;
+    margin-top: 7rem;
+    padding-bottom: 3rem;
+}
+
+main .content .content-aboutus .konten {
+    display: flex;
+}
+
+main .content .content-aboutus .konten .featured-image {
+    display: flex;
+    flex: 1.5;
+}
+
+main .content .content-aboutus .konten .featured-image img {
+    margin: auto;
+    min-width: 250px;
+    width: 95%;
+    border-radius: 10px;
+}
+
+main .content .content-aboutus .konten .teks {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    text-align: justify;
+}
+
+main .content .content-aboutus .konten .teks ul {
+    margin: 0;
+}
+
+main .content .content-aboutus .konten .teks li {
+    list-style-type: none;
+}
+
+main .content .content-aboutus .konten .teks .vid {
+    display: flex;
+    justify-content: center;
+}
+
+main .content .content-aboutus .konten .teks .vid img {
+    margin: auto;
+    min-width: 150px;
+    width: 85%;
+    border-radius: 10px;
+    border : solid 1px #df9a23;
+    position: relative;
+}
+
+main .content .content-aboutus .konten .teks .vid a {
+    position: absolute;
+    display: block;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    border-radius: 50%;
+    font-size: 30px;
+    color: white;
+    transition: .5s;
+    text-decoration: none;
+    background-color: rgba(223, 154, 35, 0.5);
+}
+
+main .content .content-aboutus .konten .teks .vid a:hover {
+    color: #df9a23;
+    border: 2px solid #df9a23;
+    box-shadow: 0 0 10px #df9a23;
+    text-shadow: 0 0 10px #df9a23;
+    background-color: rgba(255,255,255, 0.1);
+}
+
+main .content .content-aboutus .konten .teks .vid i {
+    align-self: center;
+    padding-left: 5%;
+}
+
+/* Content Chefs */
+main .content .content-chefs {
+    align-self: auto;
+    margin-top: 7rem;
+    padding-bottom: 3rem;
+}
+
+main .content .content-chefs .konten-2 {
+    display: flex;
+    flex: 1;
+    gap: 2rem;
+    padding: 1.5rem;
+}
+
+main .content .content-chefs .konten-2 .chefs {
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    transition: 0.5s;
+}
+
+main .content .content-chefs .konten-2 .chefs:hover{
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px #df9a23;
+    border: 1px solid #df9a23;
+}
+
+main .content .content-chefs .konten-2 .chefs .profile-chefs {
+    flex: 1;
+}
+
+main .content .content-chefs .konten-2 .chefs .profile-chefs img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+main .content .content-chefs .konten-2 .chefs .info-chefs {
+    text-align: center;
+    flex: 1;
+}
+
+main .content .content-chefs .konten-2 .chefs .info-chefs blockquote{
+    font-style: italic;
+}
+
+/* Start Contact */
+main .content .content-contact {
+    align-self: auto;
+    margin-top: 7rem;
+    margin-bottom: 5rem;
+}
+
+main .content .content-contact .konten-3{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 1.5rem;
+}
+
+main .content .content-contact .konten-3 .list_contact {
+    display: flex;
+    flex: 1;
+    gap: 1rem;
+}
+
+main .content .content-contact .konten-3 .list_contact .topik{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
+    flex: 1;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+}
+
+main .content .content-contact .konten-3 .list_contact .topik .icon_contact {
+    background-color: #7a0a09;
+    width: 100%;
+    min-height: 70px;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+main .content .content-contact .konten-3 .list_contact .topik i {
+    color: white;
+    font-size: 30px;
+    align-self: center;
+}
+
+main .content .content-contact .konten-3 .list_contact .topik p {
+    padding: 1.5rem;
+    text-align: justify;
+    margin: 0;
+}
+
+main .content .content-contact .konten-3 .sendmail {
+    display: flex;
+    flex: 1;
+    margin-top: 2rem;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px lightgrey;
+}
+
+main .content .content-contact .konten-3 .sendmail form {
+    width: 100%;
+    padding: 1rem;
+}
+
+main .content .content-contact .konten-3 .sendmail form .colom {
+    display: flex;
+    gap: 2rem;
+}
+
+main .content .content-contact .konten-3 .sendmail form .colom input, textarea{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border-radius: 5px;
+    transition: 0.5s;
+    outline: none;
+    border: 3px solid lightgrey;
+}
+
+main .content .content-contact .konten-3 .sendmail form .colom input:focus, textarea:focus {
+    border: 3px solid #7a0a09;
+}
+
+main .content .content-contact .konten-3 .sendmail form .tombol {
+    justify-content: end;
+}
+
+main .content .content-contact .konten-3 .sendmail form .tombol input {
+    padding: 1rem 2rem;
+    margin: auto;
+    background-color: #7a0a09;
+    border: 3px solid #7a0a09;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    border-radius: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+main .content .content-contact .konten-3 .sendmail form .tombol input:hover {
+    border: 3px solid #7a0a09;
+    color: #7a0a09;
+    background-color: transparent;
+}
+
+
+/* Start Aside */
+main aside {
+    position: fixed;
+    inset-block: 0;
+    inset-inline-end: 0;
+}
+   
+main aside .social-media {
+    height: 100%;
+    display: flex;
+}
+
+main aside .social-media .btn {
+    writing-mode: vertical-lr;
+    padding: 1.5rem 1rem;
+    margin: auto;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    background-color: #df9a23;
+   
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 800;
+    color: white;
+
+    transition: all .1s ease-in-out;
+}
+   
+main aside .social-media .btn:hover {
+    color: #7a0a09;
+    text-shadow: 0 0 5px #7a0a09;
+    background-color: white;
+    box-shadow: 0 0 5px #7a0a09;
+    cursor: pointer;
+}
+
+main aside .social-media .modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 12%;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+}
+
+main aside .social-media .modal .modal-content {
+    margin: auto;
+    width: 25%; 
+    /* Animasi Modal */
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: white;
+    border-radius: 28px;
+    border: 2px solid #666;
+}
+  
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+main aside .social-media .modal .modal-content .close {
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0.5rem;
+    background-color: rgba(255,255,255, 0.2);
+    position: absolute;
+    border-radius: 100%;
+    right: 0;
+    height: 42px;
+    width: 42px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+  
+main aside .social-media .modal .modal-content .close:hover, .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+main aside .social-media .modal .modal-content img {
+    border-top-left-radius: 28px;
+    border-top-right-radius: 28px;
+}
+
+main aside .social-media .modal .modal-content .informasi {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+main aside .social-media .modal .modal-content .informasi h2 {
+    display: flex;
+    flex: 1;
+    text-align: center;
+}
+
+main aside .social-media .modal .modal-content .informasi .modal-sub-title {
+    color: grey;
+    display: flex;
+    flex: 1;
+    margin: 0;
+}
+
+main aside .social-media .modal .modal-content .informasi p {
+    color: black;
+    display: flex;
+    flex: 1;
+}
+
+main aside .social-media .modal .modal-content .mySosmed {
+    display: flex;
+    padding-bottom: 1rem;
+}
+
+main aside .social-media .modal .modal-content .mySosmed ul {
+    padding: .5rem;
+    margin: auto;
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+   
+main aside .social-media .modal .modal-content .mySosmed li {
+    list-style-type: none;
+}
+
+main aside .social-media .modal .modal-content .mySosmed li a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: white;
+    transition: .5s;
+    background: lightgrey;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+}
+   
+main aside .social-media .modal .modal-content .mySosmed li a:hover {
+    color: #7a0a09;
+    box-shadow: 0 0 15px #7a0a09;
+    text-shadow: 0 0 15px #7a0a09;
+    border: 2px solid #7a0a09;
+}
+
+main aside .social-media .modal .modal-content .mySosmed li a i {
+    align-items: center;
+    display: flex;
+}
+
+
+
+/* Start Footer */
+footer {
+    padding: 20px;
+    color: white;
+    background-color: #1f1f24;
+    text-align: center;
+    font-weight: lighter;
+}
+
+@media screen and (max-width: 768px) {
+    header.navbar-container {
+        flex-direction: column;
+    }
+
+    header.navbar-container .nav-list ul {
+        flex-wrap: wrap;
+        column-gap: .5rem;
+    }
+
+    main .content {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    main .content .content-description .title {
+        font-size: 3rem;
+        text-align: center;
+    }
+     
+    main .content .content-description p {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    main .content .content-image {
+        order: -1;
+    }
+
+    /* Content About Us */
+    main .content .content-aboutus .konten {
+        flex-direction: column;
+    }
+
+    /* Content Chefs */
+    main .content .content-chefs .konten-2 {
+        flex-direction: column;
+    }
+
+    /* Content Contact */
+    main .content .content-contact .konten-3 .list_contact {
+        flex-direction: column;
+    }
+
+    main aside .social-media a {
+        padding: 0.5rem;
+        gap: 0.5rem;
+    }
+
+    main aside .social-media .modal {
+        top: 15%;
+    }
+
+    main aside .social-media .modal .modal-content {
+        margin: 2% auto;
+        width: 70%;
+    }
+}
